@@ -18,6 +18,70 @@
 * 회원: 음식 사진 업로드 → AI가 자동으로 **칼로리/단백질** 분석 → "**오늘 남은 칼로리/단백질**" 자동 계산.
 * AI: 음식 **인식** + **영양소 계산** → **개인 맞춤형 대시보드** 업데이트.
 * 트레이너: AI 분석 결과 바탕으로 **피드백 제공** (회원별 **칼로리/단백질 목표** 직접 설정 가능).
+// pages/index.jsx (Next.js 예시)
+import React from "react";
+
+export default function Home() {
+  return (
+    <main style={{ fontFamily: "sans-serif", background: "#f7f8fa", minHeight: "100vh" }}>
+      <header style={{ background: "#3b82f6", color: "#fff", padding: "2rem 0", textAlign: "center" }}>
+        <h1 style={{ fontSize: "2.5rem", margin: 0 }}>AI 트레이너 × 영양분석 헬스케어</h1>
+        <p style={{ fontSize: "1.2rem", marginTop: "0.5rem" }}>
+          사진 한 장으로 영양분석, 트레이너와 실시간 소통!
+        </p>
+      </header>
+      <section style={{ maxWidth: 900, margin: "2rem auto", background: "#fff", borderRadius: 16, boxShadow: "0 2px 8px #0001", padding: "2rem" }}>
+        <h2 style={{ color: "#3b82f6" }}>앱 특징</h2>
+        <ul style={{ fontSize: "1.1rem", lineHeight: 2 }}>
+          <li>
+            <b>사진 업로드</b>만 하면 <b>AI가 음식 인식·칼로리·단백질 자동 분석</b>
+          </li>
+          <li>
+            <b>트레이너와 카톡처럼 채팅</b>하며 목표 설정·피드백·코멘트
+          </li>
+          <li>
+            <b>개인 맞춤 대시보드</b>로 오늘 남은 칼로리/단백질 실시간 확인
+          </li>
+          <li>
+            <b>회원-트레이너-AI 3자 협업</b>으로 책임감·동기부여 강화
+          </li>
+          <li>
+            <b>글로벌/한식 영양DB</b> 연동, 신뢰도·오차 범위 표시
+          </li>
+          <li>
+            <b>보안 강화</b>: 이미지·건강정보 암호화, 권한 분리
+          </li>
+        </ul>
+        <div style={{ margin: "2rem 0", display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
+          <div style={{ flex: "1 1 300px", background: "#f0f4ff", borderRadius: 12, padding: "1.5rem" }}>
+            <h3 style={{ color: "#2563eb" }}>회원</h3>
+            <p>음식 사진 업로드 → AI 분석 결과 확인 → 트레이너와 소통</p>
+          </div>
+          <div style={{ flex: "1 1 300px", background: "#f0f4ff", borderRadius: 12, padding: "1.5rem" }}>
+            <h3 style={{ color: "#2563eb" }}>AI</h3>
+            <p>음식 인식, 영양소 계산, 신뢰도 표시, 대시보드 자동 업데이트</p>
+          </div>
+          <div style={{ flex: "1 1 300px", background: "#f0f4ff", borderRadius: 12, padding: "1.5rem" }}>
+            <h3 style={{ color: "#2563eb" }}>트레이너</h3>
+            <p>목표 설정, 피드백·코멘트, 회원별 맞춤 관리</p>
+          </div>
+        </div>
+        <div style={{ margin: "2rem 0", textAlign: "center" }}>
+          <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/food-1968276_1280.jpg" alt="AI 영양분석 예시" style={{ maxWidth: "100%", borderRadius: 12, boxShadow: "0 2px 8px #0002" }} />
+          <p style={{ color: "#555", marginTop: "1rem" }}>음식 사진을 보내면 AI가 자동 분석! <br />트레이너와 실시간 피드백</p>
+        </div>
+        <div style={{ marginTop: "2rem", textAlign: "center" }}>
+          <a href="#demo" style={{ background: "#3b82f6", color: "#fff", padding: "1rem 2rem", borderRadius: 8, fontSize: "1.2rem", textDecoration: "none" }}>
+            데모 보러가기
+          </a>
+        </div>
+      </section>
+      <footer style={{ textAlign: "center", color: "#888", padding: "2rem 0" }}>
+        &copy; 2025 YourCompany. Contact: product@yourcompany.com
+      </footer>
+    </main>
+  );
+}
 
 ### 사용 흐름 (사용자 여정)
 
